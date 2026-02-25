@@ -1,4 +1,4 @@
-# DevClub Store
+# System Store
 
 Landing page de e-commerce com carousel interativo. Interface dark, animações CSS, controles por teclado, touch e mouse.
 
