@@ -12,13 +12,11 @@
 <body>
 
     <div class="cursor" id="cursor"></div>
-    <div class="cursor-trail" id="cursorTrail"></div>
 
     <header class="header" id="header">
         <div class="header-logo">
             <span class="logo-dev">DEV</span><span class="logo-club">GABRIEL</span>
         </div>
-
         <nav class="navigation" id="navDesktop">
             <ul>
                 <li><a href="#" class="nav-link">Home</a></li>
@@ -26,7 +24,6 @@
                 <li><a href="#" class="nav-link">Contato</a></li>
             </ul>
         </nav>
-
         <div class="header-actions">
             <button class="cart-btn" aria-label="Carrinho">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -37,9 +34,7 @@
                 <span class="cart-count">3</span>
             </button>
             <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span></span><span></span><span></span>
             </button>
         </div>
     </header>
@@ -53,83 +48,86 @@
     <main>
         <section class="carousel-container" id="carousel" aria-label="Destaques">
 
+            <!-- SLIDE 1 — Apple Vision Pro -->
             <div class="slide active" data-index="0">
-                <div class="slide-bg">
-                    <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=1600&q=80" alt="iPhone 15 Pro">
-                </div>
-                <div class="slide-overlay"></div>
+                <div class="slide-bg"></div>
+                <div class="slide-circles"></div>
+                <div class="slide-glow"></div>
+                <img class="slide-product" src="https://i.ibb.co/0y8YkkVh/vision-pro.png" alt="Apple Vision Pro">
                 <div class="slide-content">
-                    <span class="slide-tag">Novo</span>
+                    <span class="slide-tag">Novo lançamento</span>
                     <h2 class="slide-title">
-                        <span class="line">iPhone</span>
-                        <span class="line accent">15 Pro</span>
+                        <span class="line">Apple</span>
+                        <span class="line accent">Vision Pro</span>
                     </h2>
-                    <p class="slide-desc">Titânio. Câmera Pro. Chip A17 Pro.</p>
+                    <p class="slide-desc">Computação espacial reinventada. Display micro‑OLED de 23 megapixels, chip M2 + R1 e rastreamento ocular preciso. O futuro, agora.</p>
                     <div class="slide-price">
                         <span class="price-label">A partir de</span>
-                        <span class="price-value">R$ 9.499</span>
+                        <span class="price-value">R$ 29.999</span>
                     </div>
                     <button class="slide-cta">
                         <span>Ver produto</span>
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                     </button>
                 </div>
                 <div class="slide-number">01</div>
             </div>
 
+            <!-- SLIDE 2 — Apple Watch -->
             <div class="slide" data-index="1">
-                <div class="slide-bg">
-                    <img src="https://images.unsplash.com/photo-1580910051074-3eb694886505?w=1600&q=80" alt="MacBook Pro">
-                </div>
-                <div class="slide-overlay"></div>
+                <div class="slide-bg"></div>
+                <div class="slide-circles"></div>
+                <div class="slide-glow"></div>
+                <img class="slide-product" src="https://i.ibb.co/hFkLW6sZ/apple-watch.png" alt="Apple Watch">
                 <div class="slide-content">
                     <span class="slide-tag">Top Seller</span>
                     <h2 class="slide-title">
-                        <span class="line">MacBook</span>
-                        <span class="line accent">Pro M3</span>
+                        <span class="line">Apple</span>
+                        <span class="line accent">Watch Ultra</span>
                     </h2>
-                    <p class="slide-desc">Performance que define uma era.</p>
+                    <p class="slide-desc">Caixa em titânio aeroespacial, GPS de precisão dupla e bateria de até 60h. Para quem não aceita limites.</p>
                     <div class="slide-price">
                         <span class="price-label">A partir de</span>
-                        <span class="price-value">R$ 19.999</span>
+                        <span class="price-value">R$ 7.499</span>
                     </div>
                     <button class="slide-cta">
                         <span>Ver produto</span>
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                     </button>
                 </div>
                 <div class="slide-number">02</div>
             </div>
 
+            <!-- SLIDE 3 — AirPods Max -->
             <div class="slide" data-index="2">
-                <div class="slide-bg">
-                    <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=1600&q=80" alt="AirPods Max">
-                </div>
-                <div class="slide-overlay"></div>
+                <div class="slide-bg"></div>
+                <div class="slide-circles"></div>
+                <div class="slide-glow"></div>
+                <img class="slide-product" src="https://i.ibb.co/TDn5Px91/air-pods.png" alt="AirPods Max">
                 <div class="slide-content">
                     <span class="slide-tag">Exclusivo</span>
                     <h2 class="slide-title">
                         <span class="line">AirPods</span>
                         <span class="line accent">Max</span>
                     </h2>
-                    <p class="slide-desc">Áudio imersivo sem compromisso.</p>
+                    <p class="slide-desc">Cancelamento de ruído adaptativo, áudio espacial personalizado e driver de 40mm de alta excursão. Som que envolve.</p>
                     <div class="slide-price">
                         <span class="price-label">A partir de</span>
                         <span class="price-value">R$ 4.299</span>
                     </div>
                     <button class="slide-cta">
                         <span>Ver produto</span>
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                     </button>
                 </div>
                 <div class="slide-number">03</div>
             </div>
 
             <button class="prev" aria-label="Slide anterior">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
             </button>
             <button class="next" aria-label="Próximo slide">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </button>
 
             <div class="progress-bar">
@@ -149,15 +147,6 @@
             </div>
 
         </section>
-
-        <div class="categories-strip">
-            <div class="category-item"><span class="cat-icon">📱</span><span>Smartphones</span></div>
-            <div class="category-item"><span class="cat-icon">💻</span><span>Notebooks</span></div>
-            <div class="category-item"><span class="cat-icon">🎧</span><span>Áudio</span></div>
-            <div class="category-item"><span class="cat-icon">⌚</span><span>Wearables</span></div>
-            <div class="category-item"><span class="cat-icon">📷</span><span>Câmeras</span></div>
-        </div>
-
     </main>
 
     <script src="script.js"></script>
